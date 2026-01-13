@@ -36,3 +36,27 @@ device-rebuild/_device_env.sh
 
 # Temporary download directories (created during base image download)
 /tmp/torizon_os_download_*/
+
+# ============================================
+# Sensitive Files (Never Commit)
+# ============================================
+.github_token
+device-rebuild/_device_env.sh
+
+# ============================================
+# Source Code and Build Directories
+# ============================================
+# These are for local development, not needed in GitHub Pages repo
+app/
+device-rebuild/
+ostree-customization/
+scripts/
+build/
+docker-images/
+
+# ============================================
+# Documentation Files (Not needed in feed repo)
+# ============================================
+*.md
+!README.md
+readme.md
