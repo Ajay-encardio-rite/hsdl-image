@@ -1,0 +1,54 @@
+arch=arm
+baudrate=115200
+board=apalis-imx8
+board_name=apalis-imx8
+boot_a_script=load ${devtype} ${devnum}:${distro_bootpart} ${scriptaddr} ${prefix}${script}; source ${scriptaddr}
+boot_extlinux=sysboot ${devtype} ${devnum}:${distro_bootpart} any ${scriptaddr} ${prefix}${boot_syslinux_conf}
+boot_net_usb_start=usb start
+boot_prefixes=/ /boot/
+boot_script_dhcp=boot.scr.uimg
+boot_script_dhcp=boot.scr
+boot_scripts=boot.scr.uimg boot.scr
+boot_syslinux_conf=extlinux/extlinux.conf
+boot_targets=mmc1 mmc2 mmc0 usb0 dhcp 
+bootcmd=run bootcmd_mmc0
+bootcmd_dhcp=devtype=dhcp; run boot_net_usb_start; if dhcp ${scriptaddr} ${boot_script_dhcp}; then source ${scriptaddr}; fi;
+bootcmd_mmc0=devnum=0; run mmc_boot
+bootcmd_mmc1=devnum=1; run mmc_boot
+bootcmd_mmc2=devnum=2; run mmc_boot
+bootcmd_usb0=devnum=0; run usb_boot
+bootdelay=1
+bootlimit=3
+console=ttyLP1
+cpu=armv8
+distro_bootcmd=for target in ${boot_targets}; do run bootcmd_${target}; done
+fdt_addr_r=0x9d400000
+fdt_board=eval
+initrd_addr=0x83800000
+initrd_high=0xffffffffffffffff
+ipaddr=192.168.10.2
+kernel_addr_r=0x95400000
+kernel_comp_addr_r=0xf0000000
+kernel_comp_size=0x08000000
+loadaddr=0x95400000
+loadm4image_0=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${m4_0_image}
+loadm4image_1=fatload mmc ${mmcdev}:${mmcpart} ${loadaddr} ${m4_1_image}
+m4_0_image=m4_0.bin
+m4_1_image=m4_1.bin
+m4boot_0=run loadm4image_0; dcache flush; bootaux ${loadaddr} 0
+m4boot_1=run loadm4image_1; dcache flush; bootaux ${loadaddr} 1
+mmc_boot=if mmc dev ${devnum}; then devtype=mmc; run scan_dev_for_boot_part; fi
+netmask=255.255.255.0
+preboot=test -n ${fdtfile} || setenv fdtfile ${soc}-apalis${variant}-${fdt_board}.dtb
+ramdisk_addr_r=0x9d500000
+scan_dev_for_boot=echo Scanning ${devtype} ${devnum}:${distro_bootpart}...; for prefix in ${boot_prefixes}; do run scan_dev_for_extlinux; run scan_dev_for_scripts; done;
+scan_dev_for_boot_part=part list ${devtype} ${devnum} -bootable devplist; env exists devplist || setenv devplist 1; for distro_bootpart in ${devplist}; do if fstype ${devtype} ${devnum}:${distro_bootpart} bootfstype; then run scan_dev_for_boot; fi; done; setenv devplist
+scan_dev_for_extlinux=if test -e ${devtype} ${devnum}:${distro_bootpart} ${prefix}${boot_syslinux_conf}; then echo Found ${prefix}${boot_syslinux_conf}; run boot_extlinux; echo SCRIPT FAILED: continuing...; fi
+scan_dev_for_scripts=for script in ${boot_scripts}; do if test -e ${devtype} ${devnum}:${distro_bootpart} ${prefix}${script}; then echo Found U-Boot script ${prefix}${script}; run boot_a_script; echo SCRIPT FAILED: continuing...; fi; done
+scriptaddr=0x9d480000
+serverip=192.168.10.1
+setup=setenv setupargs console=tty1 console=${console},${baudrate} consoleblank=0 earlycon
+soc=imx8
+update_uboot=askenv confirm Did you load flash.bin resp. u-boot-dtb.imx (y/N)?; if test "$confirm" = "y"; then setexpr blkcnt ${filesize} + 0x1ff && setexpr blkcnt ${blkcnt} / 0x200; mmc dev 0 1; mmc write ${loadaddr} 0x0 ${blkcnt}; fi
+usb_boot=usb start; if usb dev ${devnum}; then devtype=usb; run scan_dev_for_boot_part; fi
+vendor=toradex
