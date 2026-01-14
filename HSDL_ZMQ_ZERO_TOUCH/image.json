@@ -34,7 +34,7 @@
                         "label": "otaroot",
                         "filesystem_type": "ext4",
                         "mkfs_options": "-E nodiscard",
-                        "filename": "https://github.com/Ajay-encardio-rite/hsdl-image/releases/download/v1.0.0/torizon-core-docker-apalis-imx8.ota.tar.zst",
+                        "filename": "https://github.com/Ajay-encardio-rite/hsdl-image/releases/download/v1.0.0/hsdl-torizon-tezi-6.8.4-build.40.modified.tar",
                         "uncompressed_size": 1128.12
                     }
                 }
