@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "name": "HSDL Easy Installer Feed",
+  "images": [
+    {
+      "name": "HSDL ZMQ Zero Touch",
+      "version": "6.8.4+build.40.modified",
+      "supported-modules": ["apalis-imx8"],
+      "url": "https://github.com/Ajay-encardio-rite/hsdl-image/releases/download/v1.0.0/hsdl-torizon-tezi-6.8.4-build.40.modified.tar"
+    }
+  ]
+}
