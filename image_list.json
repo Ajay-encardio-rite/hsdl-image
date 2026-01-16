@@ -1,1 +1,6 @@
-{"config_format":1,"images":["HSDL_ZMQ_ZERO_TOUCH/image.json"]}
+{
+  "config_format": 1,
+  "images": [
+    "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/image.json"
+  ]
+}
