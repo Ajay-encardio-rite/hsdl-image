@@ -1,6 +1,6 @@
 {
   "config_format": 1,
   "images": [
-    "https://ajay-encardio-rite.github.io/hsdl-image/HSDL_ZMQ_ZERO_TOUCH.json"
+    "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/image.json.presigned?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T114751Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=402792806a0d7ae35db928d0219d5906143635c690891864e707585f072eeca4"
   ]
 }
