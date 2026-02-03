@@ -5,12 +5,12 @@
   "description": "TorizonCore Linux with no containers pre-provisioned.",
   "version": "6.8.4+build.40.modified",
   "release_date": "2026-01-19",
-  "u_boot_env": "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/u-boot-initial-env-sd?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T112209Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=20dddedbcea11208358a155a49f68aad9850038fa764c8903f760d562d5f409d",
-  "prepare_script": "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/prepare.sh?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T112206Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=302a83add09301b446cc6c9f6811540d502a62655504374dc003112e61f323cb",
-  "wrapup_script": "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/wrapup.sh?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T112209Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f4f9f082a4713a644d0e4489ba130bf835e9cf71ffa419b09e321e3d9a32adf8",
-  "marketing": "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/marketing.tar?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T112205Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=20d87953b2e777d411cd2e04507ccfdc7bd9f7e2d795c7658c479238df9cb956",
-  "icon": "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/toradexlinux.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T112207Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3ae4cc1c67ad4befa6fafcc6a329f8942993edc9b748d434c8918410961a4cf1",
-  "license": "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/LA_OPT_NXP_SW.html?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T112203Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=211d408b4d5b957625934a137618f4e4b12dad366458ba03d918396daf244410",
+  "u_boot_env": "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/u-boot-initial-env-sd?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T114156Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=0c8454c7f38efb27d2a9d42524eb6a11f7f365032798fb0c5237280620d80e52",
+  "prepare_script": "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/prepare.sh?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T114154Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=72ac2b4a9f7e8b6255a634f809fc231169f84aa5cbffd294c786fd1ba813e0d3",
+  "wrapup_script": "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/wrapup.sh?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T114157Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=171317d7096db14f5b61d95a213b03a633b528db8f516917e8c881efb2e70185",
+  "marketing": "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/marketing.tar?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T114153Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6477f5304637bc689382a1e2ac2ab39cf2dbf1b177880cac3994e269a2c17d11",
+  "icon": "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/toradexlinux.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T114155Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fd6ff457fe24e4cee06b62789dee7b41722c07e1a595df4067ffe9825b2497db",
+  "license": "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/LA_OPT_NXP_SW.html?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T114149Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1b9d68c5d7163949de4ce60adb652a291edd2f68f153021089e795e5b197fe3d",
   "supported_product_ids": [
     "0037",
     "0047",
@@ -34,7 +34,7 @@
             "label": "otaroot",
             "filesystem_type": "ext4",
             "mkfs_options": "-E nodiscard",
-            "filename": "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/torizon-core-docker-apalis-imx8.ota.tar.zst?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T112208Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=46694ed34f32cb2e891cfdf63e70ede1ec88442c289cd58314727f48a641734e",
+            "filename": "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/torizon-core-docker-apalis-imx8.ota.tar.zst?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T114155Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3fb18d05f83b900296e9b6a1e7654040494d549e14a5b6245a539bdf96d4288c",
             "uncompressed_size": 1128.12
           }
         }
@@ -47,7 +47,7 @@
         "filesystem_type": "raw",
         "rawfiles": [
           {
-            "filename": "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/imx-boot?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T112205Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=cfc7bef75a67c670d1b3c268577a540a24abd2e1f5afeb39a0feb36370d0a1fe",
+            "filename": "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/imx-boot?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T114152Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=09f746e3524f9f6f1cb5765a8a5da0449f7585d6066af7a6bd56f799fc59a85e",
             "dd_options": "seek=0"
           }
         ]
