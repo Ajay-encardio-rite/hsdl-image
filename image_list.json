@@ -1,6 +1,6 @@
 {
   "config_format": 1,
   "images": [
-    "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/image.json.presigned?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T112212Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=72afb7af89da51e72600f7f0c0fb5d7f0950ea20e3f06c4a0b08988e06e2e0fc"
+    "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/image.json.presigned?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T113325Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a903352dee7ac9ba4fd66f377bb4a8f25b9c0574b3d121ae264812fcc621df64"
   ]
 }
