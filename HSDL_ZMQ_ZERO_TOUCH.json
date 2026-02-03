@@ -1,0 +1,57 @@
+{
+  "config_format": "4",
+  "autoinstall": true,
+  "name": "HSDL ZMQ Zero Touch",
+  "description": "TorizonCore Linux with no containers pre-provisioned.",
+  "version": "6.8.4+build.40.modified",
+  "release_date": "2026-01-19",
+  "u_boot_env": "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/u-boot-initial-env-sd?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T105828Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=004b2b06db744ad437ac26c476e91f179b88a63ab10c8a21207243484b345d2a",
+  "prepare_script": "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/prepare.sh?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T105825Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=24a05b5cea56eb2fc2deb7b744d98ea02872a7044cf98aa1e407626b2efd2197",
+  "wrapup_script": "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/wrapup.sh?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T105828Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d7e9d474e32e6ff995dc7058e34e6a0adf774ec035f94b546665623ed46bbd99",
+  "marketing": "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/marketing.tar?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T105825Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=89431d66ad783f928be2d5adf98810450ccf5076c4db33b386b489de1ea85221",
+  "icon": "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/toradexlinux.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T105826Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=90f3080e123027e2e45a93568b5c5aaaffc82295c0c9364a2aae7a55da5b5e3c",
+  "license": "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/LA_OPT_NXP_SW.html?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T105822Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=7516a50288ecce9086fbb3b306aefb34c2ef96abc2eb995afbbcc110fa1cd32d",
+  "supported_product_ids": [
+    "0037",
+    "0047",
+    "0048",
+    "0049",
+    "0067",
+    "0091",
+    "0092",
+    "0093",
+    "0094",
+    "0095"
+  ],
+  "blockdevs": [
+    {
+      "name": "mmcblk0",
+      "partitions": [
+        {
+          "partition_size_nominal": "512",
+          "want_maximised": true,
+          "content": {
+            "label": "otaroot",
+            "filesystem_type": "ext4",
+            "mkfs_options": "-E nodiscard",
+            "filename": "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/torizon-core-docker-apalis-imx8.ota.tar.zst?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T105827Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a1093c0d9d2c191d6b463521a8e5552b3dec317098bca6803d9161d690e9d664",
+            "uncompressed_size": 1128.12
+          }
+        }
+      ]
+    },
+    {
+      "name": "mmcblk0boot0",
+      "erase": true,
+      "content": {
+        "filesystem_type": "raw",
+        "rawfiles": [
+          {
+            "filename": "https://hsdl-tezi-images.s3.us-east-1.amazonaws.com/tezi-images/HSDL_ZMQ_ZERO_TOUCH/imx-boot?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAZQ6QG7CBG6GZDOMO%2F20260203%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260203T105824Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e325f9511e99bfbbc43dd1b4c9ad55b7dd5ef279390c060edc1fef0a0701882c",
+            "dd_options": "seek=0"
+          }
+        ]
+      }
+    }
+  ]
+}
